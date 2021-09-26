@@ -25,5 +25,7 @@ function renderPlant(plant) {
     let waterInfo = document.createElement('p');
     waterInfo.textContent = `Should be watered ${oftenToWater}.`;
 
-    
+
+
+
 }
