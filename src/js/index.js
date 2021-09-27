@@ -122,10 +122,13 @@ viewAllLink.addEventListener('click', initAll);
 //  init function renders the plant contents to the page after 
 // the appropriate event was fired off
 function initAll() {
+    removeChildren();
     plants.forEach(renderPlant);
+    
 }
 
 function initSucculents() {
+    removeChildren();
     let succulentList = plants.filter((plant) => {
         return plant.typeOfPlant === 'Succulent';
     })
@@ -133,6 +136,7 @@ function initSucculents() {
 };
 
 function initPhilodendron() {
+    removeChildren();
     let philoList = plants.filter((plant) => {
         return plant.typeOfPlant === 'Philodendron';
     });
@@ -140,6 +144,7 @@ function initPhilodendron() {
 }
 
 function initWoodie() {
+    removeChildren();
     let woodieList = plants.filter((plant) => {
         return plant.typeOfPlant === 'Woodie';
     });
@@ -147,8 +152,14 @@ function initWoodie() {
 }
 
 function initAnnual() {
+    removeChildren();
     let annualList = plants.filter((plant) => {
         return plant.typeOfPlant === 'Annual';
     });
     annualList.forEach(renderPlant);
+}
+
+// removes the collection of provided elements
+function removeChildren() {
+    plantBox.innerHTML = '';
 }

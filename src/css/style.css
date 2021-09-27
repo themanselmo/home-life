@@ -8,6 +8,13 @@
     padding: 10px;
 }
 
+#content-container {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+
+
 .Succulent-Card {
     border: solid;
     border-color: #d46f61;
