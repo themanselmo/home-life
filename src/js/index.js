@@ -1,9 +1,6 @@
 /*
-        Need to make it so each time a link button is clicked, the
-    plant div is cleared so that old contents are removed, and 
-    to limit the times each button can be cleared to once so 
-    you can't add the same plants multiple times by clicking 
-    the same link
+        Need to add more plants to plants, and add more 
+    styling to the page
 */
 
 const plants = [
@@ -159,7 +156,7 @@ function initAnnual() {
     annualList.forEach(renderPlant);
 }
 
-// removes the collection of provided elements
+// removes the existing elements in the plantBox container
 function removeChildren() {
     plantBox.innerHTML = '';
 }
