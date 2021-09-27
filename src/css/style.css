@@ -59,3 +59,19 @@
     width: 100px;
     height: 275px;
 }
+
+.Succulent-Card:hover {
+    box-shadow: 0 8px 16px 0 #d46f61;
+}
+
+.Philodendron-Card:hover {
+    box-shadow: 0 8px 16px 0 #3a692e;
+}
+
+.Woodie-Card:hover {
+    box-shadow: 0 8px 16px 0 #583813;
+}
+
+.Annual-Card:hover {
+    box-shadow: 0 8px 16px 0 #61a0d4;
+}
